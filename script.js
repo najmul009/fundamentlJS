@@ -67,3 +67,33 @@ function picnicBudget(people){
 
 // const totalBudget = picnicBudget(201)
 // console.log(totalBudget)
+
+//problem-4
+function oddFriend (arr){
+    let  oddFirstFriend = ''
+    
+    if(Array.isArray(arr) == false ){
+        return 'Input a Array'
+    }
+    else if(Array.isArray(arr) == true){
+        for (const name of arr) {
+            let lntCheck = name.length % 2
+            if(lntCheck == 1){
+                oddFirstFriend = name
+                return oddFirstFriend;
+                break;
+            }
+
+            
+            
+        }
+        if( oddFirstFriend == ''){
+            return 'there in no odd number'
+        }
+    }
+    
+    
+}
+const fnames = ['abir','mahi','najmul','sifat','nazmul','niloy']
+// const getName = oddFriend(fnames)
+// console.log(getName)
