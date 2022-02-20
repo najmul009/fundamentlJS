@@ -11,3 +11,28 @@ function  anaToVori(ana){
 
 // const voriGet = anaToVori(32)
 // console.log(voriGet)
+
+//Problem-2
+function pandaCost(singara,chomoca,jilapi){
+    if(typeof(singara) == 'string' || singara <0){
+        return 'Input valid Numbers'
+    }
+    else if(typeof(chomoca) == 'string' || chomoca <0){
+        return 'Input valid Numbers'
+    }
+    else if(typeof(jilapi) == 'string' || jilapi <0){
+        return 'Input valid Numbers'
+    }
+    else{
+        const singaraPrice = 7;
+        const chomocaPrice = 10;
+        const jilapiPrice =15;
+        var totalPrice = (singara *singaraPrice) + (chomoca * chomocaPrice) + (jilapi * jilapiPrice)
+
+        return totalPrice;
+    }
+    
+}
+
+// const totalPandaCost = pandaCost(4,9,5)
+// console.log(totalPandaCost)
